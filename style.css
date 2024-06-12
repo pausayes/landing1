@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 200px;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.header .nav-links img {
+    width: 240px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header .nav-links img:hover {
+    transform: scale(1.1);
+}
+
+.header .btn button {
+    padding: 100px 150px;
+    background: url('img/contact-removebg-preview.png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header .btn button:hover {
+    transform: scale(1.1);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    margin-top: 85px; /* Adjust for header height */
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: 1.5rem;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: row; /* Cambiado a row para alinear horizontalmente */
+    gap: 20px;
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
+}
+
+.text-content button.btn-primary {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text-content button.btn-primary:hover {
+    background-color: #ddd;
+}
+
+.additional-text {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
